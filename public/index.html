@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            display: flex;
+            gap: 2rem;
+        }
+        #posts-list {
+            margin-bottom: 20px;
+        }
+
+        #post-detail {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #comments-list {
+            margin-top: 10px;
+        }
+
+        #show-replies {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div>
+        <h1>Posts</h1>
+        <div id="posts-list">
+            <!-- Daftar posting akan ditampilkan di sini -->
+        </div>
+    </div>
+
+    <div id="post-detail" style="display: none;">
+        <h2>Post Detail</h2>
+
+        <div id="post-content">
+            <!-- Detail posting akan ditampilkan di sini -->
+        </div>
+
+        <h3>Comments</h3>
+        <div id="comments-list">
+            <!-- Daftar komentar akan ditampilkan di sini -->
+        </div>
+        <button id="show-replies">Show Replies</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // script.js
+    $(document).ready(function () {
+        // AJAX untuk mengambil daftar posting
+        $.ajax({
+            url: '/api/posts',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                // Bersihkan daftar posting sebelum menambahkan posting baru
+                $('#posts-list').empty();
+
+                // Loop melalui data dan tambahkan posting ke #posts-list
+                data.forEach(function (post) {
+                    var createdAt = new Date(post.created_at);
+                    var humanReadableDate = createdAt.toDateString() + ' ' + createdAt.toLocaleTimeString();
+
+                    var postHtml = '<div class="post-item" data-post-id="' + post.id + '">';
+                    postHtml += '<h3>' + post.title + '</h3>';
+                    postHtml += '<p>' + post.content + '</p>';
+                    postHtml += '<p>' + humanReadableDate + '</p>';
+                    postHtml += '</div>';
+                    $('#posts-list').append(postHtml);
+                });
+            },
+
+            error: function () {
+                alert('Gagal mengambil daftar posting.');
+            }
+        });
+
+
+        // Tampilkan detail posting saat posting diklik
+        $('#posts-list').on('click', '.post-item', function () {
+            var postId = $(this).data('post-id');
+
+            // AJAX untuk mengambil detail posting dan komentar
+            $.ajax({
+                url: '/api/posts/' + postId,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Hapus konten sebelumnya
+                    $('#post-content').empty();
+                    $('#comments-list').empty();
+                    $('#show-replies').hide();
+
+                    // Tampilkan detail posting
+                    $('#post-content').append('<h3>' + data.title + '</h3>');
+                    $('#post-content').append('<p>' + data.content + '</p>');
+                    $('#post-content').append('<p>' + data.created_at + '</p>');
+
+                    // tampilkan content
+                    $('#post-detail').show();
+
+                    // Tampilkan komentar
+                    if (data.comments && data.comments.length > 0) {
+                        data.comments.forEach(function (comment) {
+                            var commentHtml = '<div class="comment-item" data-comment-id="' + comment.ID + '">';
+                            commentHtml += '<p>' + comment.text + '</p>';
+                            commentHtml += '<button class="show-replies">Show Replies</button>';
+                            commentHtml += '<div class="replies-list" style="display:none;"></div>';
+                            commentHtml += '</div>';
+
+                            $('#comments-list').append(commentHtml);
+                        });
+
+                        $('#show-replies').show();
+                    }
+
+                },
+                error: function () {
+                    alert('Gagal mengambil detail posting.');
+                }
+            });
+        });
+
+        // Tampilkan balasan saat tombol "Show Replies" diklik
+        $('#post-detail').on('click', '#show-replies', function () {
+            var commentId = $(this).closest('.comment-item').data('comment-id');
+            var repliesList = $(this).siblings('.replies-list');
+
+            // AJAX untuk mengambil balasan komentar
+            $.ajax({
+                url: '/api/posts/comments/' + commentId + '/replies',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Hapus konten sebelumnya
+                    repliesList.empty();
+
+                    // Tampilkan balasan komentar
+                    if (data && data.length > 0) {
+                        data.forEach(function (reply) {
+                            var replyHtml = '<div class="reply-item">';
+                            replyHtml += '<p>' + reply.Text + '</p>';
+                            replyHtml += '</div>';
+
+                            repliesList.append(replyHtml);
+                        });
+
+                        repliesList.show();
+                    }
+                },
+                error: function () {
+                    alert('Gagal mengambil balasan komentar.');
+                }
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

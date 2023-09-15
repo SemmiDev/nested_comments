@@ -1,0 +1,50 @@
+### Create a new post
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+### Get all posts
+GET http://localhost:3030/api/posts
+
+### Get a specific post by ID
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+
+### Update a post by ID
+PUT http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Content-Type: application/json
+
+{
+  "title": "Updated Post",
+  "content": "This is the updated content of the post"
+}
+
+### Delete a post by ID
+DELETE http://localhost:3030/api/posts/1
+
+### Create a new comment
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Content-Type: application/json
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+
+### Get parent comments for a specific post
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+
+### Create a child comment
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Content-Type: application/json
+
+{
+  "text": "This is a child comment on comment 1"
+}
+
+### Get replies for a specific parent comment
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/eee2ba0c-8ed2-45b8-adee-0f4bb60c3abd

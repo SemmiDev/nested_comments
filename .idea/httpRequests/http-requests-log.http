@@ -1,0 +1,655 @@
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T221016.200.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220340.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220339.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220338-1.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220338.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220337.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220336.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220335-1.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T220335.201.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/eee2ba0c-8ed2-45b8-adee-0f4bb60c3abd
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T215217.200.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/eee2ba0c-8ed2-45b8-adee-0f4bb60c3abd
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214932.200.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214920.200.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214857.200.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "text": "This is a child comment on comment 1"
+}
+
+<> 2023-09-15T214838-1.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "text": "This is a child comment on comment 1"
+}
+
+<> 2023-09-15T214838.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "text": "This is a child comment on comment 1"
+}
+
+<> 2023-09-15T214837.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments/2016f8f4-2c29-4a28-be50-084eea56e379
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "text": "This is a child comment on comment 1"
+}
+
+<> 2023-09-15T214830.201.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214710.200.json
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214623.400.txt
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214534.400.txt
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T214509.400.txt
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T214451.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T214450.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T214448.201.json
+
+###
+
+POST http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T214446.201.json
+
+###
+
+GET http://localhost:3030/api/posts
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T213900.200.json
+
+###
+
+GET http://localhost:3030/api/comments/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212923.200.json
+
+###
+
+GET http://localhost:3030/comments/parents/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212903.404.txt
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212853.201.json
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212851.201.json
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212850.201.json
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212849.201.json
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212844.201.json
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212820.500.txt
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 100
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212708.500.txt
+
+###
+
+POST http://localhost:3030/api/comments
+Content-Type: application/json
+Content-Length: 121
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "parent_id": null,
+  "post_id": "7f11381e-2afe-4996-adfa-af048040ecd8",
+  "text": "This is a new comment on post 1"
+}
+
+<> 2023-09-15T212554.500.txt
+
+###
+
+DELETE http://localhost:3030/api/posts/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212533.400.txt
+
+###
+
+DELETE http://localhost:3030/posts/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212527.404.txt
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212521.200.json
+
+###
+
+PUT http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Content-Type: application/json
+Content-Length: 85
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Updated Post",
+  "content": "This is the updated content of the post"
+}
+
+###
+
+GET http://localhost:3030/api/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212458.200.json
+
+###
+
+GET http://localhost:3030/posts/7f11381e-2afe-4996-adfa-af048040ecd8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212453.404.txt
+
+###
+
+GET http://localhost:3030/api/posts
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-15T212441.200.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T212431.201.json
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T212301.500.txt
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T212220.500.txt
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T212142.404.txt
+
+###
+
+POST http://localhost:3030/api/posts
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "New Post",
+  "content": "This is the content of the new post"
+}
+
+<> 2023-09-15T212125.404.txt
+
+###
+
+GET http://localhost:3030/comments/post/1/tree
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-14T233454.200.json
+
+###
+
+GET http://localhost:3030/comments/parents/3/replies
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-14T233330.200.json
+
+###
+

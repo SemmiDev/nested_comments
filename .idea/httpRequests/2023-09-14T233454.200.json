@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "parent_id": {
+      "Int64": 0,
+      "Valid": false
+    },
+    "post_id": 0,
+    "text": "Comment pertama di level 1 pada post 1",
+    "created_at": "",
+    "replies": null
+  }
+]
